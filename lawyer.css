@@ -78,7 +78,7 @@ html {
 #home::before {
     content: " ";
     position: absolute;
-    background: url('../Images/Home.jpg')no-repeat center center/cover;
+    background: url('./Images/Home.jpg')no-repeat center center/cover;
     width: 100%;
     height: 23rem;
     z-index: -1;
@@ -170,7 +170,7 @@ html {
 #query::before {
     content: " ";
     position: absolute;
-    background: url('../Images/Court.jpg')no-repeat center center/cover;
+    background: url('./Images/Court.jpg')no-repeat center center/cover;
     width: 100%;
     height: 32.7rem;
     z-index: -1;
@@ -312,12 +312,16 @@ html {
        padding: 3rem 2rem;
         width: auto;
         height: auto;
-        border: 2px solid red;
+        
     }
 
     .home-cont p,
     .home-cont h2 {
         margin-bottom: 1rem;
+    }
+
+    #home::before {
+       height: 40rem;
     }
 
     #form {
