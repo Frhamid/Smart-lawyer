@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lawyer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61af18984e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Hahmlet:wght@500&family=Josefin+Sans:ital,wght@1,300&family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lawyer.css">
+</head>
+
+<body>
+    
+    <!-- -----------------------------------------------nav--------------------------------- -->
+    <nava id="navbar">
+        <h1><i class="fa-solid fa-gavel"></i> Smart Lawyer</h1>
+        <ul class="navigation">
+            <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#About"><i class="fa-solid fa-address-card"></i>About</a></li>
+            <li><a href="#query"><i class="fa-solid fa-clipboard-question"></i>Query</a></li>
+            <li><a href="#clients"><i class="fa-solid fa-star"></i></i>Reviews</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
+            
+        </ul>
+    </nava>
+    
+
+    
+
+    <!-- ------------------------------------------------------home---------------------- -->
+    <section id="home">
+        <div class="home-cont">
+            <p class="secondary-p">Intelligent Lawyer</p>
+            <h2 class="secondary-h">AI Based Lawyer</h2>
+            <p class="secondary-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam provident id
+                repellat ipsum aperiam sit accusantium accusamus quisquam nisi impedit dolorum blanditiis officia,
+                voluptas sunt? Sunt necessitatibus, quas accusantium aspernatur rerum exercitationem error.</p>
+        </div>
+    </section>
+    <!-- ----------------------------------------about------------------------------------------- -->
+
+    <section id="About">
+        <div class="about-container">
+
+            <h1 class="secondary-h center">Legal Solutions</h1>
+            <p class="secondary-p center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+                consectetur dolore molestiae debitis adipisci earum iste rem incidunt impedit? Perspiciatis?</p>
+            <div class="about-box">
+                <img src="../Images/About.jpg" alt="">
+                <ul class="collection">
+                    <li class="collection-item">
+                        <h2>services</h2>
+                    </li>
+                    <li class="collection-item"><i class="fa-solid fa-check"></i>Ai-based recommendation on stated issue
+                    </li>
+                    <li class="collection-item"><i class="fa-solid fa-check"></i>Ai-based analysis according to PPC</li>
+                    <li class="collection-item"><i class="fa-solid fa-check"></i>24/7 availability</li>
+                    <li class="collection-item"><i class="fa-solid fa-check"></i>Inexpensive</li>
+                    <li class="collection-item"><i class="fa-solid fa-check"></i>Advisory with refrences by constitution
+                        of Pakistan</li>
+                    <li class="collection-item"><i class="fa-solid fa-check"></i>Secure & Confidential</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!-- -----------------------------------------------------------query----------------------------- -->
+    <section id="query">
+        <h1 class="secondary-h">Type your query</h1>
+        <textarea name="" id="question" cols="30" rows="10" placeholder="Type your Query"></textarea>
+        <button  class="btn waves-effect waves-light pulse" type="submit" name="action" onclick="lawyer()">Submit
+            <i class="material-icons right">send</i>
+        </button>
+        <p id="answere" ></p>
+    </section>
+<!-- ----------------------------------------------------------clients--------------------------------- -->
+    <section id="clients">
+        <h1 class="secondary-h">Clients</h1>
+
+        <div id="rows" class="row">
+
+            <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic incidunt nisi soluta
+                            placeat.lorem14 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo magnam
+                            officia ipsa. Soluta, optio.</p>
+                    </div>
+                    <div class="card-action">
+                        <a id="name">Farhan</a>
+                        <a>|</a>
+                        <a id="city">Islamabad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic incidunt nisi soluta
+                            placeat.lorem14 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo magnam
+                            officia ipsa. Soluta, optio.</p>
+                    </div>
+                    <div class="card-action">
+                        <a id="name">Farhan</a>
+                        <a>|</a>
+                        <a id="city">Islamabad</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic incidunt nisi soluta
+                            placeat.lorem14 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo magnam
+                            officia ipsa. Soluta, optio.</p>
+                    </div>
+                    <div class="card-action">
+                        <a id="name">Farhan</a>
+                        <a>|</a>
+                        <a id="city">Islamabad</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+<!-- --------------------------------------------------------------------------contact----------------------- -->
+    <section id="contact">
+        <h1 class="secondary-h">Contact</h1>
+        <div id="form" class="row">
+            <form class="col s12">
+                
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="First Name" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="Contact" type="text" class="validate">
+                        <label for="Contact">Contact</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="city1" type="text" class="validate">
+                        <label for="city1">Your City</label>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea" placeholder="Write a review"></textarea>
+                        <label for="textarea1">Review</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        This is an inline input field:
+                        <div class="input-field inline">
+                            <button class="btn waves-effect waves-light blue pulse"  name="action" onclick="added()">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+<!-- ---------------------------------------------------footer--------------------------------- -->
+    <footer id="foot" class="page-footer black">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Headquarter</h5>
+              <p class="grey-text text-lighten-4">Intelligent Lawyer <br> 1234 Moscow, Moscow P.O. Box 01234 Office Suite 1001.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Content</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#home">Home</a></li>
+                <li><a class="grey-text text-lighten-3" href="#About">About</a></li>
+                <li><a class="grey-text text-lighten-3" href="#query">Query</a></li>
+                <li><a class="grey-text text-lighten-3" href="#clients">Clients</a></li>
+                <li><a class="grey-text text-lighten-3" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright grey darken-3">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right hover" href="#navbar">Move up     <i class="fa-solid fa-upload"></i></a>
+          </div>
+        </div>
+      </footer>
+      <!-- ---------------------------------------------floating-------------------------->
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red pulse">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a href="#home" class="btn-floating red"><i class="material-icons">home</i></a></li>
+          <li><a href="#About" class="btn-floating yellow darken-1"><i class="material-icons">featured_play_list</i></a></li>
+          <li><a href="#query" class="btn-floating green"><i class="fa-solid fa-clipboard-question"></i></a></li>
+          <li><a href="#clients" class="btn-floating purple"><i class="fa-solid fa-star"></i></a></li>
+          <li><a href="#contact" class="btn-floating blue"><i class="material-icons">phone</i></a></li>
+        </ul>
+      </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+
+</body>
+<script src="lawyer.js"></script>
+</html>
