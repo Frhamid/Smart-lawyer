@@ -1,7 +1,7 @@
-let ppc = ["Title and extent of operation of the Code", "Punishment of offences committed within Pakistan", "Punishment of offences committed beyond, but which by law may be tried within Pakistan", "Certain laws not to be affected by this Act"];
+let ppc = ["Title and extent of operation of the Code", "Punishment of offences executed  within Pakistan", "retribution of crime committed beyond , but which by law may be tried within Pakistan", "Certain laws not to be affected by this Act"];
 
-let ans = ["This Act shall be called the Pakistan Penal Code, and shall take effect throughout Pakistan.", "Every person shall be liable to punishment under this Code and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within Pakistan.", "Any person liable, by any Pakistan Law, to be tried for an offence committed beyond Pakistan shall be dealt with according to the provision of this Code for any act committed beyond Pakistan in the same manner as if such act had been committed within Pakistan.", "Nothing in this Act is intended to repeal, vary, suspend or affect any of the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the State or of any special or local law."];
-console.log(document.getElementById('question'));
+let ans = ["PPC Code 1 : This Act shall be called the Pakistan Penal Code, and shall take effect throughout Pakistan.", "PPC Code 2 :Every person shall be liable to punishment under this Code and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within Pakistan.", "PPC Code 3 : Any person liable, by any Pakistan Law, to be tried for an offence committed beyond Pakistan shall be dealt with according to the provision of this Code for any act committed beyond Pakistan in the same manner as if such act had been committed within Pakistan.", "PPC Code 4 : Nothing in this Act is intended to repeal, vary, suspend or affect any of the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the State or of any special or local law."];
+
 function array() {
 
     let b = document.getElementById('question').value;
@@ -35,10 +35,10 @@ function lawyer() {
                             p = true;
                         }
 
+                        // else {
+                        //     document.getElementById('answere').innerHTML = 'wrong search';
+                        // }
                     }
-                    // else{
-                    //     document.getElementById('Answere').innerHTML = 'wrong search';
-                    // }
 
                 }
 
@@ -56,7 +56,7 @@ function lawyer() {
 
 // ---------------------------------------------------Adding review-----------------
 
-function added(){
+function added() {
     let name = document.getElementById('first_name').value;
     let cities = document.getElementById('city1').value;
     let review = document.getElementById('textarea1').value;
@@ -82,10 +82,10 @@ function added(){
 
 // -------------------------------------floating button
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, {
-      direction: 'top'
+        direction: 'top'
     });
-  });
+});
 
